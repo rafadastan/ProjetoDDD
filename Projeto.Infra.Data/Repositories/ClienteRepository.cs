@@ -26,5 +26,9 @@ namespace Projeto.Infra.Data.Repositories
         {
             return dataContext.Cliente.FirstOrDefault(c => c.Email.Equals(email));
         }
+        public int CountDependentes(int idCliente)
+        {
+            return dataContext.Dependente.Count(d => d.ClienteId == idCliente);
+        }
     }
 }

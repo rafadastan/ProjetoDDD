@@ -17,6 +17,11 @@ namespace Projeto.Infra.Data.Repositories
             this.dataContext = dataContext;
         }
 
+        public int CountClientes(int idPlano)
+        {
+            return dataContext.Cliente.Count(c => c.PlanoId == idPlano);
+        }
+
         public Plano GetBySigla(string sigla)
         {
             return dataContext.Plano.FirstOrDefault(p => p.Sigla.Equals(sigla));

@@ -8,5 +8,6 @@ namespace Projeto.Domain.Contracts.Repositories
     {
         Cliente GetByEmail(string email);
         Cliente GetByCpf(string cpf);
+        int CountDependentes(int idCliente);
     }
 }

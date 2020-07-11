@@ -7,5 +7,6 @@ namespace Projeto.Domain.Contracts.Repositories
     public interface IPlanoRepository : IBaseRepository<Plano>
     {
         Plano GetBySigla(string sigla);
+        int CountClientes(int idPlano); 
     }
 }
