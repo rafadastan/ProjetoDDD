@@ -5,11 +5,19 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Projeto.Domain.Contracts.Repositories;
+using Projeto.Domain.Contracts.Services;
+using Projeto.Domain.Services;
+using Projeto.Infra.Data.Contexts;
+using Projeto.Infra.Data.Repositories;
+using ProjetoApplication.Contracts;
+using ProjetoApplication.Services;
 
 namespace Projeto.Presentation.Api
 {
@@ -44,6 +52,27 @@ namespace Projeto.Presentation.Api
                     }
                 };
             });
+
+            #endregion
+
+            #region EntityFrameworkCore
+            services.AddDbContext<DataContext>(options=> 
+                                    options.UseSqlServer(Configuration.GetConnectionString("ProjetoDDD")));
+            #endregion
+
+            #region Injeção de Dependencia
+
+            services.AddTransient<IPlanoApplicationService, PlanoApplicationService>();
+            services.AddTransient<IClienteApplicationService, ClienteApplicationService>();
+            services.AddTransient<IDependenteApplicationService, DependenteApplicationService>();
+
+            services.AddTransient<IPlanoDomainService, PlanoDomainService>();
+            services.AddTransient<IClienteDomainService, ClienteDomainService>();
+            services.AddTransient<IDependenteDomainService, DependenteDomainService>();
+
+            services.AddTransient<IPlanoRepository, PlanoRepository>();
+            services.AddTransient<IClienteRepository, ClienteRepository>();
+            services.AddTransient<IDependenteRepository, DependenteRepository>();
 
             #endregion
         }
