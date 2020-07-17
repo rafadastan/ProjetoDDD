@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. CrossCutting", "5. Cross
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto.Presentation.Api", "Projeto.Presentation.Api\Projeto.Presentation.Api.csproj", "{74E0B6BB-DE02-40E3-B0A3-103BDEADBDCA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetoApplication", "ProjetoApplication\ProjetoApplication.csproj", "{D6070E19-4029-46E7-A5B0-904A1EBF786D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto.Application", "ProjetoApplication\Projeto.Application.csproj", "{D6070E19-4029-46E7-A5B0-904A1EBF786D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto.Domain", "Projeto.Domain\Projeto.Domain.csproj", "{EF039DFE-C005-48C3-B307-0B9F975B71AF}"
 EndProject
