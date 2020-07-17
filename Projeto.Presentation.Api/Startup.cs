@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Projeto.CrossCutting;
+using Projeto.Domain.Contracts.CrossCutting;
 using Projeto.Domain.Contracts.Repositories;
 using Projeto.Domain.Contracts.Services;
 using Projeto.Domain.Services;
@@ -65,14 +67,19 @@ namespace Projeto.Presentation.Api
             services.AddTransient<IPlanoApplicationService, PlanoApplicationService>();
             services.AddTransient<IClienteApplicationService, ClienteApplicationService>();
             services.AddTransient<IDependenteApplicationService, DependenteApplicationService>();
+            services.AddTransient<IUsuarioApplicationService, UsuarioApplicationService>();
 
             services.AddTransient<IPlanoDomainService, PlanoDomainService>();
             services.AddTransient<IClienteDomainService, ClienteDomainService>();
             services.AddTransient<IDependenteDomainService, DependenteDomainService>();
+            services.AddTransient<IUsuarioDomainService, UsuarioDomainService>();
 
             services.AddTransient<IPlanoRepository, PlanoRepository>();
             services.AddTransient<IClienteRepository, ClienteRepository>();
             services.AddTransient<IDependenteRepository, DependenteRepository>();
+            services.AddTransient<IUsuarioRepository, UsuarioRepository>();
+
+            services.AddTransient<IMD5Cryptography, MD5Cryptography>();
 
             #endregion
         }

@@ -13,15 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. InfraStructure", "4. Inf
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. CrossCutting", "5. CrossCutting", "{28930325-6607-4E8C-AC12-57AF44B4F966}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.Presentation.Api", "Projeto.Presentation.Api\Projeto.Presentation.Api.csproj", "{74E0B6BB-DE02-40E3-B0A3-103BDEADBDCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto.Presentation.Api", "Projeto.Presentation.Api\Projeto.Presentation.Api.csproj", "{74E0B6BB-DE02-40E3-B0A3-103BDEADBDCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoApplication", "ProjetoApplication\ProjetoApplication.csproj", "{D6070E19-4029-46E7-A5B0-904A1EBF786D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetoApplication", "ProjetoApplication\ProjetoApplication.csproj", "{D6070E19-4029-46E7-A5B0-904A1EBF786D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.Domain", "Projeto.Domain\Projeto.Domain.csproj", "{EF039DFE-C005-48C3-B307-0B9F975B71AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto.Domain", "Projeto.Domain\Projeto.Domain.csproj", "{EF039DFE-C005-48C3-B307-0B9F975B71AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.Infra.Data", "Projeto.Infra.Data\Projeto.Infra.Data.csproj", "{9DA14EDD-79FF-4B55-A62B-0B97DF3C35FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto.Infra.Data", "Projeto.Infra.Data\Projeto.Infra.Data.csproj", "{9DA14EDD-79FF-4B55-A62B-0B97DF3C35FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.CrossCutting", "Projeto.CrossCutting\Projeto.CrossCutting.csproj", "{E85602D1-3892-46F6-A23C-2950F73B2F18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto.CrossCutting", "Projeto.CrossCutting\Projeto.CrossCutting.csproj", "{E85602D1-3892-46F6-A23C-2950F73B2F18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
