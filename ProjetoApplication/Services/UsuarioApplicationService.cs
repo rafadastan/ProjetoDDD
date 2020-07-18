@@ -17,6 +17,11 @@ namespace ProjetoApplication.Services
             this.usuarioDomainService = usuarioDomainService;
         }
 
+        public Usuario GetByLogin(string login)
+        {
+            return usuarioDomainService.GetByLogin(login);
+        }
+
         public Usuario GetByLoginAndSenha(UsuarioAutenticacaoModel model)
         {
             return usuarioDomainService.GetByLoginAndSenha(model.Login, model.Senha);

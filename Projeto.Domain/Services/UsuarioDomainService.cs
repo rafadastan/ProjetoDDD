@@ -20,6 +20,11 @@ namespace Projeto.Domain.Services
             this.cryptography = cryptography;
         }
 
+        public Usuario GetByLogin(string login)
+        {
+            return usuarioRepository.GetByLogin(login);
+        }
+
         public Usuario GetByLoginAndSenha(string login, string senha)
         {
             var registro = usuarioRepository.GetByLoginAndSenha(login,cryptography.Encrypt(senha));
